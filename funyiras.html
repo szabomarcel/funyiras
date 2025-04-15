@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Fűnyírás Beosztás</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+
+    <h1>Fűnyírás Beosztás 2025</h1>
+    <label for="nameFilter">Szűrés név alapján:</label>
+    <select id="nameFilter">
+        <option value="">-- Összes --</option>
+        <option value="Sz.Marcell">Sz.Marcell</option>
+        <option value="K.Tibor">K.Tibor</option>
+        <option value="U.Dávid">U.Dávid</option>
+        <option value="U.Peti">U.Peti</option>        
+    </select>  
+    
+    <h2>Április</h2>
+    <table>
+      <thead><tr><th>Dátum</th><th>Név</th></tr></thead>
+      <tbody>
+        <tr class="row"><td>2025.04.19</td><td>Sz.Marcell</td></tr>
+      </tbody>
+    </table>
+    
+    <h2>Május</h2>
+    <table>
+      <thead><tr><th>Dátum</th><th>Név</th></tr></thead>
+      <tbody>
+        <tr class="row"><td>2025.05.03</td><td>K.Tibor</td></tr>
+        <tr class="row"><td>2025.05.17</td><td>U.Dávid</td></tr>
+        <tr class="row"><td>2025.05.31</td><td>U.Peti</td></tr>
+      </tbody>
+    </table>
+    
+    <h2>Június</h2>
+    <table>
+      <thead><tr><th>Dátum</th><th>Név</th></tr></thead>
+      <tbody>
+        <tr class="row"><td>2025.06.14</td><td>Sz.Marcell</td></tr>
+        <tr class="row"><td>2025.06.28</td><td>K.Tibor</td></tr>
+      </tbody>
+    </table>
+    
+    <h2>Július</h2>
+    <table>
+      <thead><tr><th>Dátum</th><th>Név</th></tr></thead>
+      <tbody>
+        <tr class="row"><td>2025.07.12</td><td>U.Dávid</td></tr>
+        <tr class="row"><td>2025.07.26</td><td>U.Peti</td></tr>
+      </tbody>
+    </table>
+    
+    <h2>Augusztus</h2>
+    <table>
+      <thead><tr><th>Dátum</th><th>Név</th></tr></thead>
+      <tbody>
+        <tr class="row"><td>2025.08.09</td><td>Sz.Marcell</td></tr>
+        <tr class="row"><td>2025.08.23</td><td>K.Tibor</td></tr>
+      </tbody>
+    </table>
+    
+    <h2>Szeptember</h2>
+    <table>
+      <thead><tr><th>Dátum</th><th>Név</th></tr></thead>
+      <tbody>
+        <tr class="row"><td>2025.09.06</td><td>U.Dávid</td></tr>
+        <tr class="row"><td>2025.09.20</td><td>U.Peti</td></tr>
+      </tbody>
+    </table>
+    
+    <h2>Október</h2>
+    <table>
+      <thead><tr><th>Dátum</th><th>Név</th></tr></thead>
+      <tbody>
+        <tr class="row"><td>2025.10.04</td><td>Sz.Marcell</td></tr>
+        <tr class="row"><td>2025.10.18</td><td>K.Tibor</td></tr>
+      </tbody>
+    </table>
+    
+    <button onclick="exportToPDF()">Exportálás PDF-be</button>
+    
+    </body>
+</html>
